@@ -31,11 +31,9 @@ code {
     background-color: #ddd; /* this is shorthand for #dddddd */
 }
 
-.highlight {
-    background-color: #efefaa;
-    border-radius: 25px;
-    padding: 25px;
-}
+<div id="note">
+    <p>This is a note.</p>
+    </div>
 
 /* ID examples - should be unique */
 
