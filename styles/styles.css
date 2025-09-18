@@ -1,5 +1,12 @@
- :root { 
-     --main-bg-color: lightblue; 
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root { 
+    --main-bg-color: lightblue; 
     --nav-bg-color: darkblue;
     --nav-text-color: white;
     --aside-bg-color: #eee;
@@ -7,28 +14,51 @@
     --footer-border-color: #000;
 }
 
-
 nav {
-    background-color: darkblue;
+    background-color: var(--nav-bg-color);
     padding: 10px;
+    display: flex;               /* arrange links horizontally */
+    gap: 1rem;                   /* space between links */
+    justify-content: center;     /* center the links */
 }
+
 nav a {
-    color: white;
-    display: block;
-    padding: 20px;
+    color: var(--nav-text-color);
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
 }
+
+/* Hover effect */
+nav a:hover {
+    background-color: white;
+    color: var(--nav-bg-color);
+    border-radius: 5px;
+}
+
+/* Active link style (example for Home page) */
+nav a.active {
+    background-color: white;
+    color: var(--nav-bg-color);
+    border-radius: 5px;
+}
+
 h1 {
     color: darkblue;
+    margin-bottom: 1rem;;
 }
+
 main img {
     width: 150px;
     height: auto;
     border: 1px solid black;
     padding: 2px;
     box-shadow: 0 0 30px gray;
-
 }
+
 p {
+    margin-top: 1rem; /* optional: extra space above paragraphs */
     padding: 0;
 }
 
@@ -36,21 +66,44 @@ main {
     max-width: 840px;
 }
 
-aside {
-    background-color: #eee;
-    padding: 1rem;
-    margin: 1rem;
-    border: 1px solid rgb(0, 0, 0.2);
-    width: 20rem;
-    text-align: center;
-    color: #333; 
+/* Float profile image to the right */
+.profile {
+    float: right;
+    margin: 0 0 1rem 1rem;
 }
+
+/* Class Selectors */
+.box {
+    margin: 1rem 0;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    background-color: var(--aside-bg-color);
+    color: var(--aside-text-color);
+}
+
+aside {
+    position: relative; /* needed for overlay */
+    text-align: center;
+}
+
 aside img {
     width: 200px;
     height: auto;
 }
+
+/* Overlay heading on aside image */
+aside h2 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+}
+
 footer {
     text-align: center;
-    border-top: 1px solid #000;
+    border-top: 1px solid var(--footer-border-color);
     margin-top: 15px;
 }
