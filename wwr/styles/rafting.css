@@ -102,7 +102,7 @@ footer nav.socialmedia img { width:32px; height:32px; }
   gap: 2rem;
   margin-top: 1rem;
   align-items: stretch; 
-
+}
 .contact-left, .contact-right {
   flex: 1;
   min-width: 300px;
