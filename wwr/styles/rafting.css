@@ -1,4 +1,4 @@
-/* CSS Variables */
+
 :root {
   --body-font: Arial, sans-serif;
   --heading-font: 'Trebuchet MS', sans-serif;
@@ -8,7 +8,7 @@
   --bg-color: #fdfdfd;
 }
 
-/* Reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -28,7 +28,6 @@ header, main, footer {
   padding: 1rem;
 }
 
-/* Header */
 header {
   display: grid;
   grid-template-columns: auto 1fr;
@@ -58,28 +57,27 @@ header nav a.active {
   border-radius: 4px;
 }
 
-/* Headings */
+
 h1, h2 {
   font-family: var(--heading-font);
   color: var(--primary-color);
   margin-bottom: 0.5rem;
 }
 
-/* Sections */
+
 section {
   margin: 2rem 0;
   padding: 1rem 0;
   width: 100%;
 }
 
-/* Hero (other pages) */
 .hero { position: relative; margin-bottom: 2rem; }
 .hero img { display: block; width: 100%; border-radius: 8px; }
 .hero h1 { position: absolute; top: 20px; width: 100%; padding: 16px; text-align: center; background-color: rgba(0,170,255,0.8); color:#fff; border-radius:4px; }
 .hero article { position:absolute; bottom:20px; left:20px; background:rgba(0,0,0,0.6); color:#fff; padding:10px; border-radius:8px; }
 .hero article img { float:right; width:125px; margin-left:10px; }
 
-/* Adventure / Team Sections */
+
 .adventures {
   display: flex;
   justify-content: space-between;
@@ -92,33 +90,30 @@ section {
 .adventures img { width: 100%; border-radius: 8px; }
 figcaption { margin-top:0.25rem; font-size:0.9rem; color: var(--primary-color); }
 
-/* Footer */
+
 footer { border-top:1px solid #ccc; padding-top:1rem; margin-top:2rem; }
 footer nav.socialmedia { display:flex; justify-content:flex-end; gap:10px; margin-top:0.5rem; }
 footer nav.socialmedia img { width:32px; height:32px; }
 
-/* Contact Page */
 
-/* Flex layout: map + form side by side */
 .contact-container {
   display: flex;
   flex-direction: row;
   gap: 2rem;
   margin-top: 1rem;
-  align-items: stretch; /* ensures both columns same height */
-}
+  align-items: stretch; 
 
 .contact-left, .contact-right {
   flex: 1;
   min-width: 300px;
 }
 
-/* Stack vertically on small screens */
+
 @media (max-width: 768px) {
   .contact-container { flex-direction: column; }
 }
 
-/* Form styling */
+
 form { display:flex; flex-direction:column; gap:0.75rem; height: 100%; }
 form label { font-weight:bold; margin-bottom:0.25rem; }
 form input[type="text"],
@@ -131,7 +126,7 @@ form textarea {
   width:100%;
 }
 
-/* Radio buttons & checkboxes */
+
 .radio-group, .checkbox-group {
   display:flex;
   flex-direction:column;
@@ -148,7 +143,6 @@ form textarea {
 
 input[type="radio"], input[type="checkbox"] { margin:0; }
 
-/* Submit button */
 form button {
   cursor:pointer;
   font-size:1.1rem;
@@ -167,7 +161,7 @@ form button:hover {
   transform: scale(1.05);
 }
 
-/* Make iframe fill its container */
+
 .contact-left iframe {
   width: 100%;
   height: 100%;
