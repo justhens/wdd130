@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML & CSS Quiz</title>
+    <link rel="stylesheet" href="styles/quiz.css" />
+</head>
+
+<body>
+    <main>
+        <h1>HTML & CSS Quiz</h1>
+        <form action="#" method="post">
+
+            <div class="form-group">
+                <label for="q1">1. What does “CSS” stand for?</label><br />
+                <input type="text" id="q1" name="q1" />
+            </div>
+
+
+            <div class="form-group">
+                <label for="q2">2. Explain the difference between `class` and `id` selectors in CSS.</label><br />
+                <textarea id="q2" name="q2" rows="4"></textarea>
+            </div>
+
+
+            <div class="form-group">
+                <label for="q3">3. Which HTML tag is used to link a CSS file externally?</label><br />
+                <select id="q3" name="q3">
+                    <option value="" selected disabled>Choose One …</option>
+                    <option value="link">link</option>
+                    <option value="style">style</option>
+                    <option value="script">script</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="q4">4. How many levels of heading tags are there in HTML (i.e. h1, h2…)?</label><br />
+                <input type="number" id="q4" name="q4" min="1" max="6" />
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Submit Quiz</button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
