@@ -51,12 +51,13 @@ header nav a {
 
 header nav a:hover,
 header nav a.active {
+  text-align: center;
   background-color: var(--accent-color);
   color: #fff;
   border-radius: 4px;
 }
 
-h1, h2 {
+h1 {
   font-family: var(--heading-font);
   color: var(--primary-color);
   margin-bottom: 0.5rem;
@@ -196,3 +197,32 @@ form button:hover {
   object-fit: cover;  
   border-radius: 8px; 
 }
+
+h1,h2{
+  text-align: center;
+  font-size: 2.5rem; 
+  margin-bottom: 1rem; 
+}
+
+h2 {
+  font-size: 1rem; 
+  margin-bottom: 0.75rem; 
+}
+form .form-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+form .form-row label {
+  width: 100px; 
+  text-align: right;
+  margin-bottom: 0; 
+}
+
+form .form-row input {
+  flex: 1;
+
+}
+
+
