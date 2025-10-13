@@ -1,123 +1,67 @@
 <!DOCTYPE html>
-<html lang="en-US">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - White Water Adventures</title>
-    <meta name="description"
-        content="Contact White Water Adventures to ask questions, book trips, or get more information about our rafting adventures.">
-    <meta name="author" content="Justin Henson">
-    <link rel="stylesheet" href="styles/rafting.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - White Water Adventures</title>
+  <meta name="description" content="Contact information for White Water Adventures, including address, phone, email, and map location.">
+  <link rel="stylesheet" href="styles/rafting.css">
 </head>
-
 <body>
 
-    <header>
-        <img src="images/logo.jpg" alt="WWR Logo" class="logo">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html" class="active">Contact</a>
-        </nav>
-    </header>
+<header>
+  <img src="images/logo.jpg" alt="WWR Logo" class="logo">
+  <h1>White Water Adventures</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="trips.html">Trips</a>
+    <a href="contact.html" class="active">Contact</a>
+  </nav>
+</header>
 
-    <main>
-        <section>
-            <h1>White Water Adventures</h1>
-            <div class="contact-info">
-                <p><strong>Address:</strong> 123 River Road, Rapids City, RC 45678</p>
-                <p><strong>Phone:</strong> (555) 123-4567</p>
-                <p><strong>Email:</strong> info@whitewateradventures.com</p>
-            </div>
-        </section>
+<main>
+  <section class="features">
+    <h2>Contact & Location</h2>
+    <p><strong>Address:</strong> 123 River Road, Adventure City, State 54321</p>
+    <p><strong>Phone:</strong> (123) 456-7890</p>
+    <p><strong>Email:</strong> info@whitewateradventures.com</p>
+    <p><strong>Hours:</strong> Monday–Sunday, 8:00 AM – 6:00 PM</p>
 
-        <section>
-            <h2>Get in Touch</h2>
-            <div class="contact-container">
+    <div class="contact-container">
+      <div class="contact-left">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18... (your map link here) ..." allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
 
-                <div class="contact-left">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019827047776!2d-122.41941568468124!3d37.77492927975973!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085814cf7a8f99f%3A0xe4b9c0a6e2c5f7f0!2sSan+Francisco%2C+CA!5e0!3m2!1sen!2sus!4v1695819141234!5m2!1sen!2sus"
-                        allowfullscreen loading="lazy">
-                    </iframe>
-                </div>
+      <div class="contact-right">
+        <form>
+          <div class="form-row">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-row">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-row">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
 
-                <div class="contact-right">
-
-                    <form action="#" method="post">
-                        <div class="form-row">
-                            <label for="name">Name:</label>
-                            <input type="text" id="name" name="name" placeholder="Your full name">
-                        </div>
-
-                        <div class="form-row">
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" placeholder="you@example.com">
-                        </div>
-
-                        <p>Reason for Contact:</p>
-                        <div class="radio-group">
-                            <label for="reason-booking">
-                                <input type="radio" id="reason-booking" name="reason" value="Booking"> Booking
-                            </label>
-                            <label for="reason-feedback">
-                                <input type="radio" id="reason-feedback" name="reason" value="Feedback"> Feedback
-                            </label>
-                            <label for="reason-general">
-                                <input type="radio" id="reason-general" name="reason" value="General Inquiry"> General
-                                Inquiry
-                            </label>
-                        </div>
-
-                        <div class="form-row">
-                            <label for="message">Message:</label>
-                            <textarea id="message" name="message" rows="5"
-                                placeholder="Type your message here"></textarea>
-                        </div>
-
-                        <div class="checkbox-group">
-                            <label for="newsletter">
-                                <input type="checkbox" id="newsletter" name="newsletter"> Subscribe to our newsletter
-                            </label>
-                        </div>
-
-                        <button type="submit">Submit</button>
-                    </form>
-
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <h2>Meet Our Team</h2>
-            <div class="adventures">
-                <figure>
-                    <img src="images/employee1.jpg" alt="Employee 1 - Alex Patching">
-                    <figcaption>Alex Patching - Trip Coordinator</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/employee2.jpg" alt="Employee 2 - John Smith">
-                    <figcaption>John Smith - Safety Guide</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/employee3.jpg" alt="Employee 3 - Emily Johnson">
-                    <figcaption>Emily Johnson - Customer Service</figcaption>
-                </figure>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 White Water Adventure Company | Justin Henson</p>
-        <nav class="socialmedia">
-            <a href="https://www.facebook.com"><img src="images/facebook.png" alt="Follow us on Facebook"></a>
-            <a href="https://x.com"><img src="images/twitter.png" alt="Follow us on Twitter"></a>
-            <a href="https://www.instagram.com"><img src="images/instagram.png" alt="Follow us on Instagram"></a>
-        </nav>
-    </footer>
+<footer>
+  <p>© 2025 White Water Adventure Company | Justin Henson</p>
+  <nav class="socialmedia">
+    <a href="https://www.facebook.com"><img src="images/facebook.png" alt="Facebook"></a>
+    <a href="https://x.com"><img src="images/twitter.png" alt="Twitter"></a>
+    <a href="https://www.instagram.com"><img src="images/instagram.png" alt="Instagram"></a>
+  </nav>
+</footer>
 
 </body>
-
 </html>
