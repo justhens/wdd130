@@ -7,8 +7,8 @@
 :root {
   --body-font: Arial, sans-serif;
   --heading-font: 'Trebuchet MS', sans-serif;
-  --primary-color: #4B6B50; 
-  --accent-color: #A8C1A2; 
+  --primary-color: #4B6B50; /* neutral green/gray */
+  --accent-color: #A8C1A2;  /* soft green */
   --text-color: #222;
   --bg-color: #fdfdfd;
   --light-bg: #eef6ed;
@@ -333,8 +333,8 @@ footer nav.socialmedia img {
 
 /* ===== FEATURES LIST ===== */
 .features ul {
-  list-style-type: disc; 
-  padding-left: 1.5rem; 
+  list-style-type: disc; /* default bullet */
+  padding-left: 1.5rem; /* space for bullet and text */
   margin: 1rem auto;    
   text-align: left;     
 }
