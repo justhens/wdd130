@@ -4,10 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Justin Henson">
   <title>Contact - White Water Adventures</title>
   <meta name="description"
     content="Contact information for White Water Adventures, including address, phone, email, and map location.">
-  <meta name="author" content="Justin Henson">
   <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
@@ -33,7 +33,9 @@
       <p><strong>Hours:</strong> Monday–Sunday, 8:00 AM – 6:00 PM</p>
 
       <div class="contact-container">
+
         <div class="contact-left">
+          <!-- Google Map -->
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.206356050258!2d-122.41941558468112!3d37.77492927975968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808f5a093c7b%3A0xa3b1b34b9e9a9eb9!2sWhite%20Water%20Adventures!5e0!3m2!1sen!2sus!4v1600000000000!5m2!1sen!2sus"
             allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
@@ -71,9 +73,14 @@
             <div class="purpose-row">
               <label>Purpose:</label>
               <div class="radio-group">
-                <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
-                <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
-                <label><input type="radio" name="purpose" value="website"> Suggestions</label>
+                <input type="radio" id="purpose-general" name="purpose" value="general" required>
+                <label for="purpose-general">General Inquiry</label>
+
+                <input type="radio" id="purpose-reservation" name="purpose" value="reservation">
+                <label for="purpose-reservation">Reservation Question</label>
+
+                <input type="radio" id="purpose-suggestions" name="purpose" value="website">
+                <label for="purpose-suggestions">Suggestions</label>
               </div>
             </div>
 
@@ -83,13 +90,14 @@
             </div>
 
             <div class="checkbox-row">
-              <input type="checkbox" name="subscribe" id="subscribe">
+              <input type="checkbox" id="subscribe" name="subscribe">
               <label for="subscribe">Subscribe to the newsletter</label>
             </div>
 
             <button type="submit" class="submit-btn">Send Message</button>
           </form>
         </div>
+
       </div>
     </section>
   </main>
