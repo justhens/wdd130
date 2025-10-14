@@ -1,67 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact - White Water Adventures</title>
-  <meta name="description" content="Contact information for White Water Adventures, including address, phone, email, and map location.">
+  <meta name="description"
+    content="Contact information for White Water Adventures, including address, phone, email, and map location.">
   <link rel="stylesheet" href="styles/rafting.css">
+  <style>
+    /* === FORM STYLING === */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      background-color: #f9f9f9;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-row {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .form-row label {
+      width: 130px;
+      text-align: right;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      flex: 1;
+      padding: 0.6rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    fieldset {
+      border: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    legend {
+      width: 130px;
+      text-align: right;
+      font-weight: bold;
+    }
+
+    .radio-group {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .radio-group label {
+      font-weight: normal;
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
+    .checkbox-row {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 0.5rem;
+      margin-left: 130px;
+    }
+
+    .submit-btn {
+      background-color: var(--primary-color, #004080);
+      color: white;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      align-self: flex-start;
+      margin-left: 130px;
+    }
+
+    .submit-btn:hover {
+      background-color: var(--accent-color, #00aaff);
+    }
+
+    /* === PAGE LAYOUT === */
+    .contact-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-top: 1.5rem;
+    }
+
+    .contact-left iframe {
+      width: 100%;
+      height: 300px;
+      border: 0;
+      border-radius: 8px;
+    }
+
+    .contact-right {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    @media (min-width: 768px) {
+      .contact-left {
+        flex: 1;
+      }
+
+      .contact-right {
+        flex: 1;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
-<header>
-  <img src="images/logo.jpg" alt="WWR Logo" class="logo">
-  <h1>White Water Adventures</h1>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Us</a>
-    <a href="trips.html">Trips</a>
-    <a href="contact.html" class="active">Contact</a>
-  </nav>
-</header>
+  <header>
+    <img src="images/logo.jpg" alt="WWR Logo" class="logo">
+    <h1>White Water Adventures</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="trips.html">Trips</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
 
-<main>
-  <section class="features">
-    <h2>Contact & Location</h2>
-    <p><strong>Address:</strong> 123 River Road, Adventure City, State 54321</p>
-    <p><strong>Phone:</strong> (123) 456-7890</p>
-    <p><strong>Email:</strong> info@whitewateradventures.com</p>
-    <p><strong>Hours:</strong> Monday–Sunday, 8:00 AM – 6:00 PM</p>
+  <main>
+    <section class="features">
+      <h2>Contact & Location</h2>
+      <p><strong>Address:</strong> 123 River Road, Adventure City, State 54321</p>
+      <p><strong>Phone:</strong> (123) 456-7890</p>
+      <p><strong>Email:</strong> info@whitewateradventures.com</p>
+      <p><strong>Hours:</strong> Monday–Sunday, 8:00 AM – 6:00 PM</p>
 
-    <div class="contact-container">
-      <div class="contact-left">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18... (your map link here) ..." allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="contact-container">
+        <div class="contact-left">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18... (your map link here) ..." allowfullscreen=""
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="contact-right">
+          <form>
+            <div class="form-row">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-row">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="purpose-row">
+              <label>Purpose:</label>
+              <div class="radio-group">
+                <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
+                <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
+                <label><input type="radio" name="purpose" value="website"> Suggestions</label>
+                <label><input type="radio" name="purpose" value="other"> Other</label>
+              </div>
+            </div>
+
+            <div class="form-row" style="align-items: flex-start;">
+              <label for="message" style="margin-top: 0.5rem;">Message:</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+
+            <div class="checkbox-row">
+              <input type="checkbox" name="subscribe" id="subscribe">
+              <label for="subscribe">Subscribe to the newsletter</label>
+            </div>
+
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+        </div>
       </div>
+    </section>
+  </main>
 
-      <div class="contact-right">
-        <form>
-          <div class="form-row">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-          </div>
-          <div class="form-row">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-          </div>
-          <div class="form-row">
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-          </div>
-          <button type="submit">Send Message</button>
-        </form>
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer>
-  <p>© 2025 White Water Adventure Company | Justin Henson</p>
-  <nav class="socialmedia">
-    <a href="https://www.facebook.com"><img src="images/facebook.png" alt="Facebook"></a>
-    <a href="https://x.com"><img src="images/twitter.png" alt="Twitter"></a>
-    <a href="https://www.instagram.com"><img src="images/instagram.png" alt="Instagram"></a>
-  </nav>
-</footer>
+  <footer>
+    <p>© 2025 White Water Adventure Company | Justin Henson</p>
+    <nav class="socialmedia">
+      <a href="https://www.facebook.com"><img src="images/facebook.png" alt="Facebook"></a>
+      <a href="https://x.com"><img src="images/twitter.png" alt="Twitter"></a>
+      <a href="https://www.instagram.com"><img src="images/instagram.png" alt="Instagram"></a>
+    </nav>
+  </footer>
 
 </body>
+
 </html>
