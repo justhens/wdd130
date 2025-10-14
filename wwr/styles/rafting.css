@@ -4,11 +4,11 @@
 :root {
   --body-font: Arial, sans-serif;
   --heading-font: 'Trebuchet MS', sans-serif;
-  --primary-color: #6e85f7;
-  --accent-color: #7dd4cc;
-  --text-color: #222;
-  --bg-color: #fdfdfd;
-  --light-bg: #eef6ed;
+  --primary-color: #23408e;   /* deep blue for strong contrast */
+  --accent-color: #4ecdc4;    /* teal accent, accessible on dark */
+  --text-color: #222;         /* dark gray for text on light bg */
+  --bg-color: #fdfdfd;        /* white background */
+  --light-bg: #e3e9f3;        /* light blue-gray for sections */
 }
 
 /* RESET & GLOBAL */
