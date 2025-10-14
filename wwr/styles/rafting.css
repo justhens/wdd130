@@ -4,14 +4,14 @@
 :root {
   --body-font: Arial, sans-serif;
   --heading-font: 'Trebuchet MS', sans-serif;
-  --primary-color: #23408e;   /* deep blue for strong contrast */
-  --accent-color: #f7b32b;    /* warm gold accent */
-  --text-color: #111;         /* nearly black for best readability */
-  --bg-color: #fdfdfd;        /* white background */
-  --light-bg: #e3e9f3;        /* light blue-gray for sections */
+  --primary-color: #23408e;   
+  --accent-color: #f7b32b;   
+  --text-color: #111;        
+  --bg-color: #fdfdfd;        
+  --light-bg: #e3e9f3;        
 }
 
-/* RESET & GLOBAL */
+
 * {margin:0; padding:0; box-sizing:border-box;}
 body {
   font-family:var(--body-font);
