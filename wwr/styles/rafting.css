@@ -5,8 +5,8 @@
   --body-font: Arial, sans-serif;
   --heading-font: 'Trebuchet MS', sans-serif;
   --primary-color: #23408e;   /* deep blue for strong contrast */
-  --accent-color: #2789df;    /* teal accent, accessible on dark */
-  --text-color: #222;         /* dark gray for text on light bg */
+  --accent-color: #f7b32b;    /* warm gold accent */
+  --text-color: #111;         /* nearly black for best readability */
   --bg-color: #fdfdfd;        /* white background */
   --light-bg: #e3e9f3;        /* light blue-gray for sections */
 }
